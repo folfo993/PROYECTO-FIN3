@@ -117,10 +117,14 @@ public class RESTAR501 extends javax.swing.JFrame {
         jButton84 = new javax.swing.JButton();
         jButton85 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         areatext = new javax.swing.JTextField();
         areatext2 = new javax.swing.JTextField();
+        p1 = new javax.swing.JTextField();
+        p2 = new javax.swing.JTextField();
+        contador = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -163,17 +167,16 @@ public class RESTAR501 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, " 501", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Andalus", 1, 48), new java.awt.Color(0, 204, 204))); // NOI18N
         jPanel1.setToolTipText("");
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/volver.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/Home.png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 420, 80, 50));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 440, 50, 50));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -215,21 +218,21 @@ public class RESTAR501 extends javax.swing.JFrame {
         });
         jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, 20, 10));
 
-        j1.setText("J.1");
+        j1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/YouTube-logo-play-icon.png"))); // NOI18N
         j1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 j1ActionPerformed(evt);
             }
         });
-        jPanel1.add(j1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 270, 110, -1));
+        jPanel1.add(j1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 260, 40, 30));
 
-        j2.setText("J.2");
+        j2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/YouTube-logo-play-icon.png"))); // NOI18N
         j2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 j2ActionPerformed(evt);
             }
         });
-        jPanel1.add(j2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 270, 110, -1));
+        jPanel1.add(j2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 260, 40, 30));
 
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton9.addActionListener(new java.awt.event.ActionListener() {
@@ -853,6 +856,16 @@ public class RESTAR501 extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 410, 415));
 
+        jLabel3.setFont(new java.awt.Font("Trebuchet MS", 3, 30)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(51, 255, 0));
+        jLabel3.setText("PLAYER 2");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 120, 160, 30));
+
+        jLabel7.setFont(new java.awt.Font("Trebuchet MS", 3, 30)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 255, 255));
+        jLabel7.setText("PLAYER 1");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 120, 160, 30));
+
         areatext.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         areatext.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         areatext.setText("501");
@@ -868,17 +881,28 @@ public class RESTAR501 extends javax.swing.JFrame {
         areatext2.setText("501");
         jPanel1.add(areatext2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 180, 110, 60));
 
-        jLabel2.setBackground(new java.awt.Color(0, 204, 204));
+        p1.setText("0");
+        jPanel1.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(532, 240, 0, -1));
+
+        p2.setText("0");
+        jPanel1.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(692, 240, 0, -1));
+
+        contador.setText("0");
+        contador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                contadorActionPerformed(evt);
+            }
+        });
+        jPanel1.add(contador, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 200, 0, -1));
+
+        jLabel2.setFont(new java.awt.Font("Trebuchet MS", 3, 60)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(51, 51, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText(" MARCADORES");
+        jLabel2.setText("501");
         jLabel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, 170, 40));
-
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("VOLVER");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 400, 80, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 30, 160, 60));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/TgC_barra06.gif"))); // NOI18N
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 410, -1));
@@ -887,7 +911,8 @@ public class RESTAR501 extends javax.swing.JFrame {
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 490, 410, 10));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/diana-con-los-dardos-en-el-centro-39489623.jpg"))); // NOI18N
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 830, 450));
+        jLabel6.setText("ad");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 510));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 510));
         jPanel1.getAccessibleContext().setAccessibleName("");
@@ -910,20 +935,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido.play();
         
       int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -40;
-     
-      if(newValor<0){
+      int jugador;
+      int jugador2;
+      
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -40;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -40;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -931,20 +980,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
-        int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -20;
-     
-      if(newValor<0){
+      int valor2;
+      int newValor;
+      int jugador;
+      int jugador2;
+      
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -20;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -20;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    } 
       
       
     }//GEN-LAST:event_jButton4ActionPerformed
@@ -954,20 +1027,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -60;
-     
-      if(newValor<0){
+      int jugador;
+      int jugador2;
+      
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -60;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -60;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -975,37 +1072,78 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -20;
+      int jugador;
+      int jugador2;
       
-      //if(textarea==enabled(true)){  -Si jugador 1 esta activo, hacer lo siguiente(en "areatext") sino(else), si jugador 2 esta activo hacer lo mismo con jugador 2(en "areatext2")
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -20;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
-      /*}else if (textarea2 == enabled(true)){
-            if(newValor<0){
-                areatext2.setText(Integer.toString(valor));
-            }else if(newValor==0){
-                gdr2 g2 = new gdr2();
-                g2.setVisible(true)
-            }else{
-                areatext2.setText(Integer.toString(newValor));
-            }
-        }*/
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -20;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void j1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j1ActionPerformed
         
-            areatext.setEnabled(true);
-            areatext2.setEnabled(false);
+        int valor = 1;
+        int valor2 = 0;
+        int cont;
+        int newcont;
+        int punt1;
+        int punt2;
+        
+        cont = Integer.parseInt(contador.getText());
+        newcont = cont+1;
+        
+        if(newcont==20){
+            punt1 = Integer.parseInt(areatext.getText());
+            punt2 = Integer.parseInt(areatext2.getText());
+            if(punt1 < punt2){
+                gdr1 g1 = new gdr1();
+                g1.setVisible(true);
+                this.setVisible(false);
+            }else if(punt2 < punt1){
+                gdr2 g2 = new gdr2();
+                g2.setVisible(true);
+                this.setVisible(false);
+            }
+        }
+        contador.setText(Integer.toString(newcont));
+        
+        p1.setText(Integer.toString(valor));
+        p2.setText(Integer.toString(valor2));;
+        
+        areatext.setEnabled(true);
+        areatext2.setEnabled(false);
         
     }//GEN-LAST:event_j1ActionPerformed
 
@@ -1014,20 +1152,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -14;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -14;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -14;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton71ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
@@ -1035,20 +1197,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -2;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -2;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -2;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
@@ -1056,20 +1242,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -1;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -1;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -1;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
@@ -1077,20 +1287,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -3;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -3;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -3;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
@@ -1098,20 +1332,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -1;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -1;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -1;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
@@ -1119,20 +1377,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -36;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -36;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -36;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
@@ -1140,20 +1422,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -18;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -18;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -18;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
@@ -1161,20 +1467,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -54;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -54;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -54;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
@@ -1182,20 +1512,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -18;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -18;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -18;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
@@ -1203,20 +1557,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -8;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -8;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -8;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
@@ -1224,20 +1602,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -4;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -4;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -4;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
@@ -1245,20 +1647,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -12;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -12;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -12;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
@@ -1266,20 +1692,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -4;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -4;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -4;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
@@ -1287,20 +1737,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -26;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -26;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -26;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
@@ -1308,20 +1782,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -13;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -13;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -13;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
@@ -1329,20 +1827,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -39;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -39;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -39;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);this.setVisible(false);
+            
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
@@ -1350,20 +1872,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -13;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -13;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -13;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void areatextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_areatextActionPerformed
@@ -1372,8 +1918,13 @@ public class RESTAR501 extends javax.swing.JFrame {
 
     private void j2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j2ActionPerformed
         
-            areatext2.setEnabled(true);
-            areatext.setEnabled(false);
+        int valor = 1;
+        int valor2 = 0;
+        p2.setText(Integer.toString(valor));
+        p1.setText(Integer.toString(valor2));
+        
+        areatext2.setEnabled(true);
+        areatext.setEnabled(false);
         
     }//GEN-LAST:event_j2ActionPerformed
 
@@ -1382,20 +1933,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -7;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -7;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }// TODO add your handling code here:
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -7;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton55ActionPerformed
 
     private void jButton81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton81ActionPerformed
@@ -1403,20 +1978,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -5;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -5;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }// TODO add your handling code here:
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -5;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton81ActionPerformed
 
     private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
@@ -1424,20 +2023,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -7;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -7;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }// TODO add your handling code here:
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -7;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton53ActionPerformed
 
     private void jButton80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton80ActionPerformed
@@ -1445,20 +2068,44 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -10;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -10;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }// TODO add your handling code here:
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -10;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton80ActionPerformed
 
     private void jButton83ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton83ActionPerformed
@@ -1466,1197 +2113,2570 @@ public class RESTAR501 extends javax.swing.JFrame {
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
         int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -5;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -5;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -5;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton83ActionPerformed
 
     private void jButton82ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton82ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -15;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -15;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -15;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton82ActionPerformed
 
     private void jButton76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton76ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -24;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -24;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -24;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton76ActionPerformed
 
     private void jButton77ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton77ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -12;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -12;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -12;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton77ActionPerformed
 
     private void jButton78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton78ActionPerformed
        AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -36;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -36;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -36;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton78ActionPerformed
 
     private void jButton79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton79ActionPerformed
        AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -12;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -12;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -12;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton79ActionPerformed
 
     private void jButton72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton72ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -18;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -18;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -18;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton72ActionPerformed
 
     private void jButton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton73ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -9;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -9;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -9;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton73ActionPerformed
 
     private void jButton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton74ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -27;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -27;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -27;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton74ActionPerformed
 
     private void jButton75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton75ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -9;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -9;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -9;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton75ActionPerformed
 
     private void jButton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton68ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -24;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -24;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -24;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton68ActionPerformed
 
     private void jButton69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton69ActionPerformed
        AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -14;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -14;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -14;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton69ActionPerformed
 
     private void jButton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton70ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -42;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -42;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -42;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton70ActionPerformed
 
     private void jButton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton64ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -22;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -22;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -22;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton64ActionPerformed
 
     private void jButton65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton65ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -11;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -11;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -11;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton65ActionPerformed
 
     private void jButton66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton66ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -33;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -33;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -33;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton66ActionPerformed
 
     private void jButton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton67ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -11;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -11;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -11;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton67ActionPerformed
 
     private void jButton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton60ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -16;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -16;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -16;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton60ActionPerformed
 
     private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -8;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -8;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -8;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton61ActionPerformed
 
     private void jButton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton62ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -24;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -24;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -24;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton62ActionPerformed
 
     private void jButton63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton63ActionPerformed
        AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -8;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -8;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -8;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton63ActionPerformed
 
     private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -32;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -32;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -32;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton56ActionPerformed
 
     private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton57ActionPerformed
        AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -16;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -16;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -16;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton57ActionPerformed
 
     private void jButton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton58ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -48;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -48;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -48;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton58ActionPerformed
 
     private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -16;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -16;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -16;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton59ActionPerformed
 
     private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -14;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -14;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -14;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton52ActionPerformed
 
     private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -21;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -21;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -21;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton54ActionPerformed
 
     private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -19;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -19;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -19;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton49ActionPerformed
 
     private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -38;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -38;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -38;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton48ActionPerformed
 
     private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -57;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -57;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -57;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton50ActionPerformed
 
     private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -19;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -19;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -19;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton51ActionPerformed
 
     private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -6;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -6;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -6;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton44ActionPerformed
 
     private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -3;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -3;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -3;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton45ActionPerformed
 
     private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -9;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -9;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -9;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton46ActionPerformed
 
     private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -3;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -3;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -3;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton47ActionPerformed
 
     private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -34;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -34;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -34;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton40ActionPerformed
 
     private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -17;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -17;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -17;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton41ActionPerformed
 
     private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -51;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -51;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -51;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton42ActionPerformed
 
     private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -17;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -17;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -17;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton43ActionPerformed
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -4;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -4;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -4;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton36ActionPerformed
 
     private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -2;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -2;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -2;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton37ActionPerformed
 
     private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -6;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -6;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -6;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton38ActionPerformed
 
     private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -2;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -2;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -2;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton39ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -30;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -30;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -30;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton32ActionPerformed
 
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -15;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -15;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -15;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton33ActionPerformed
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -45;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -45;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -45;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton34ActionPerformed
 
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
         
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
-        sonido.play();int valor;
+        sonido.play();
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -15;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -15;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -15;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton35ActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -20;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -20;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -20;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -10;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -10;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -10;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton29ActionPerformed
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -30;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -30;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -30;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton30ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -10;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -10;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -10;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -12;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -12;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -12;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -6;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -6;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -6;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton25ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -18;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -18;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -18;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -6;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -6;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -6;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton84ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton84ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -25;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -25;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -25;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton84ActionPerformed
 
     private void jButton85ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton85ActionPerformed
         AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/explosion_barrel_00.wav"));
         sonido.play();
-        int valor;
+      int valor;
+      int valor2;
       int newValor;
-    
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -50;
+      int jugador;
+      int jugador2;
       
-      if(newValor<0){
+      jugador = Integer.parseInt(p1.getText());
+      jugador2 = Integer.parseInt(p2.getText());
+      
+      
+      
+    if(jugador == 1){ 
+        valor = Integer.parseInt(areatext.getText());
+        newValor = valor -50;
+        
+        if(newValor<0){
           areatext.setText(Integer.toString(valor)); 
-      }else if(newValor==0){
+        }else if(newValor==0){
           gdr1 g1 = new gdr1();
           g1.setVisible(true);
           this.setVisible(false);
-      }else{
+        }else{
           areatext.setText(Integer.toString(newValor));
-      }
+        }
+        
+    }else if(jugador2 == 1){  
+        valor = Integer.parseInt(areatext2.getText());
+        newValor = valor -50;
+      
+        if(newValor<0){
+            areatext2.setText(Integer.toString(valor));
+        }else if(newValor==0){
+            gdr2 g2 = new gdr2();
+            g2.setVisible(true);
+            this.setVisible(false);
+        }else{
+            areatext2.setText(Integer.toString(newValor));
+        }
+    }
     }//GEN-LAST:event_jButton85ActionPerformed
+
+    private void contadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contadorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_contadorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2696,6 +4716,7 @@ public class RESTAR501 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField areatext;
     private javax.swing.JTextField areatext2;
+    private javax.swing.JTextField contador;
     private javax.swing.JButton j1;
     private javax.swing.JButton j2;
     private javax.swing.JButton jButton1;
@@ -2791,8 +4812,11 @@ public class RESTAR501 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPopupMenu jPopupMenu1;
+    private javax.swing.JTextField p1;
+    private javax.swing.JTextField p2;
     // End of variables declaration//GEN-END:variables
 }

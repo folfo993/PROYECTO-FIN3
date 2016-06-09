@@ -120,9 +120,14 @@ public class RULETA extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         areatext = new javax.swing.JTextField();
         areatext2 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         numRdn = new javax.swing.JTextField();
         tirar = new javax.swing.JButton();
+        p1 = new javax.swing.JTextField();
+        p2 = new javax.swing.JTextField();
+        contador = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -168,7 +173,6 @@ public class RULETA extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "RULETA", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Andalus", 1, 36), new java.awt.Color(0, 204, 204))); // NOI18N
         jPanel1.setToolTipText("");
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -220,16 +224,21 @@ public class RULETA extends javax.swing.JFrame {
         });
         jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, 20, 10));
 
-        j1.setText("J.1");
+        j1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/YouTube-logo-play-icon.png"))); // NOI18N
         j1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 j1ActionPerformed(evt);
             }
         });
-        jPanel1.add(j1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 380, 110, -1));
+        jPanel1.add(j1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 370, 40, 30));
 
-        j2.setText("J.2");
-        jPanel1.add(j2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 380, 110, -1));
+        j2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/YouTube-logo-play-icon.png"))); // NOI18N
+        j2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                j2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(j2, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 370, 40, 30));
 
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton9.addActionListener(new java.awt.event.ActionListener() {
@@ -352,66 +361,171 @@ public class RULETA extends javax.swing.JFrame {
         jPanel1.add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 20, 10));
 
         jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 250, 10, 50));
 
         jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton25ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 270, 30, 20));
 
         jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton26ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, 10, 20));
 
         jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton27ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 270, 30, 10));
 
         jButton28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton28ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 330, 10, 10));
 
         jButton29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton29ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 310, 20, 20));
 
         jButton30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton30ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 300, 10, 10));
 
         jButton31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton31ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 290, 20, 10));
 
         jButton32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton32ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton32, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 370, 10, 10));
 
         jButton33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton33ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton33, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 350, 20, 20));
 
         jButton34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton34ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton34, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 330, 10, 10));
 
         jButton35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton35ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton35, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 10, 10));
 
         jButton36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton36ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton36, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 410, 10, 10));
 
         jButton37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton37ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton37, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 380, 20, 20));
 
         jButton38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton38ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton38, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 350, 10, 10));
 
         jButton39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton39ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton39, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 330, 10, 10));
 
         jButton40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton40ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton40, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 430, 10, 10));
 
         jButton41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton41ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton41, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 400, 20, 20));
 
         jButton42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton42ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton42, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 370, 10, 10));
 
         jButton43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton43ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton43, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 10, 20));
 
         jButton44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton44ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton44, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 440, 50, 10));
 
         jButton45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
@@ -423,78 +537,203 @@ public class RULETA extends javax.swing.JFrame {
         jPanel1.add(jButton45, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 403, 30, 20));
 
         jButton46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton46.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton46ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton46, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 370, 30, 10));
 
         jButton47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton47.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton47ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton47, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 10, 50));
 
         jButton48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton48ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton48, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 430, 10, 10));
 
         jButton49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton49ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton49, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 400, 20, 20));
 
         jButton50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton50ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton50, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 370, 10, 10));
 
         jButton51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton51ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton51, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 330, 10, 20));
 
         jButton52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton52ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton52, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 410, 10, 10));
 
         jButton53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton53.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton53ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton53, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 380, 20, 20));
 
         jButton54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton54ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton54, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, 10, 10));
 
         jButton55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton55ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton55, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 10, 10));
 
         jButton56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton56ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton56, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 370, 10, 10));
 
         jButton57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton57.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton57ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton57, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 350, 20, 20));
 
         jButton58.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton58.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton58ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton58, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 330, 10, 10));
 
         jButton59.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton59.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton59ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton59, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, 10, 10));
 
         jButton60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton60.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton60ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton60, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 10, 10));
 
         jButton61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton61.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton61ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton61, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 310, 20, 20));
 
         jButton62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton62.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton62ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton62, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 300, 10, 10));
 
         jButton63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton63.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton63ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton63, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 290, 20, 10));
 
         jButton64.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton64.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton64ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton64, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 10, 50));
 
         jButton65.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton65.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton65ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton65, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 260, 20, 30));
 
         jButton66.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton66.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton66ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton66, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, 10, 20));
 
         jButton67.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton67.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton67ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton67, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, 30, 10));
 
         jButton68.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton68.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton68ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton68, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 10, 10));
 
         jButton69.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton69.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton69ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton69, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 20, 20));
 
         jButton70.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton70.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton70ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton70, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, 10, 10));
 
         jButton71.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
@@ -506,39 +745,99 @@ public class RULETA extends javax.swing.JFrame {
         jPanel1.add(jButton71, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, 20, 10));
 
         jButton72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton72.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton72ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton72, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 10, 10));
 
         jButton73.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton73.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton73ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton73, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 20, 20));
 
         jButton74.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton74.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton74ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton74, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 10, 20));
 
         jButton75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton75.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton75ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton75, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, 10, 10));
 
         jButton76.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton76.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton76ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton76, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, 10, 10));
 
         jButton77.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton77.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton77ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton77, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 20, 20));
 
         jButton78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton78.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton78ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton78, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 10, 10));
 
         jButton79.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton79.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton79ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton79, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, 10, 10));
 
         jButton80.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton80.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton80ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton80, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, 20, 10));
 
         jButton81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton81.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton81ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton81, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, 20, 20));
 
         jButton82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton82.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton82ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton82, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 10, 10));
 
         jButton83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton83.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton83ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton83, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 200, 10, 30));
 
         jButton84.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
@@ -559,21 +858,17 @@ public class RULETA extends javax.swing.JFrame {
                 areatextActionPerformed(evt);
             }
         });
-        jPanel1.add(areatext, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 300, 110, 60));
+        jPanel1.add(areatext, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 300, 110, 60));
 
         areatext2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         areatext2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         areatext2.setText("0");
-        jPanel1.add(areatext2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 300, 110, 60));
+        jPanel1.add(areatext2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 300, 110, 60));
 
-        jLabel2.setBackground(new java.awt.Color(0, 204, 204));
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText(" MARCADORES");
-        jLabel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 230, 170, 30));
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 3, 50)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 0, 51));
+        jLabel9.setText("RULETA");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 10, 210, 40));
         jPanel1.add(numRdn, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 60, 60, 70));
 
         tirar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/dado-imagen-animada-0020.gif"))); // NOI18N
@@ -584,7 +879,27 @@ public class RULETA extends javax.swing.JFrame {
         });
         jPanel1.add(tirar, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 140, 100, 80));
 
+        p1.setText("0");
+        jPanel1.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(522, 230, 0, -1));
+
+        p2.setText("0");
+        jPanel1.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 230, 0, -1));
+
+        contador.setText("0");
+        jPanel1.add(contador, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 130, 0, -1));
+
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 3, 30)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(51, 255, 0));
+        jLabel11.setText("PLAYER 2");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 230, -1, -1));
+
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 3, 30)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 255, 255));
+        jLabel10.setText("PLAYER 1");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 230, -1, -1));
+
         jLabel4.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 0, 51));
         jLabel4.setText("APUNTA AL NÚMERO.. :");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 40, -1, -1));
 
@@ -598,14 +913,14 @@ public class RULETA extends javax.swing.JFrame {
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 490, 410, -1));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/diana-con-los-dardos-en-el-centro-39489623.jpg"))); // NOI18N
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 830, 470));
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 510));
-        jPanel1.getAccessibleContext().setAccessibleName("");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 840, 510));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("VOLVER");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 490, 80, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 490, 80, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 510));
+        jPanel1.getAccessibleContext().setAccessibleName("");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -620,184 +935,939 @@ public class RULETA extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
-        sonido.play();
-        
+        int jugador;
+        int jugador2;
         int numero = 20;
         int aleatorio;
         int valor;
         int newValor = 0;
         
-        
         aleatorio = Integer.parseInt(numRdn.getText());
-        if(aleatorio == numero){
-        //  if(textarea==enabled(true)){  -Si jugador 1 esta activo, hacer lo siguiente(en "areatext") 
-                valor = Integer.parseInt(areatext.getText());
-                
-                newValor = valor +2;
-     
-                areatext.setText(Integer.toString(newValor)); 
-                
-        /*  }else if(textarea2==enabled(true)){, si jugador 2 esta activo hacer lo mismo con jugador 2(en "areatext2")
-                valor = Integer.parseInt(areatext2.getText());
-                newValor = valor +1;
-     
-                areatext2.setText(Integer.toString(newValor));
-        */
-        }else{
-            valor = Integer.parseInt(areatext.getText());
-            areatext.setText(Integer.toString(valor));
-        } 
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        AudioClip sonido;
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
-        sonido.play();
         
-        int numero = 20;
-        int aleatorio;
-        int valor;
-        int newValor = 0;
-        
-        operaciones op = new operaciones();
-        aleatorio = Integer.parseInt(numRdn.getText());
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
         if(aleatorio == numero){ 
                 valor = Integer.parseInt(areatext.getText());
-                op.sumUno(valor, newValor);
-                newValor = valor +1;
+                newValor=valor+2;
+                
      
                 areatext.setText(Integer.toString(newValor)); 
                
         }else{
             valor = Integer.parseInt(areatext.getText());
             areatext.setText(Integer.toString(valor));
-        } 
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    } 
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 20;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    } 
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 20;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
       
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 20;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
       
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void j1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j1ActionPerformed
-    //  INACTIVO ARETEXT2 Y ACTIVO ARETEXT1 . dISABLE 
+        int valor = 1;
+        int valor2 = 0;
+        int cont;
+        int newcont;
+        int punt1;
+        int punt2;
+        
+        cont = Integer.parseInt(contador.getText());
+        newcont = cont+1;
+        
+        if(newcont==20){
+            punt1 = Integer.parseInt(areatext.getText());
+            punt2 = Integer.parseInt(areatext2.getText());
+            if(punt1 > punt2){
+                gdr1 g1 = new gdr1();
+                g1.setVisible(true);
+                this.setVisible(false);
+            }else if(punt2 > punt1){
+                gdr2 g2 = new gdr2();
+                g2.setVisible(true);
+                this.setVisible(false);
+            }
+        }
+        contador.setText(Integer.toString(newcont));
+        
+        p1.setText(Integer.toString(valor));
+        p2.setText(Integer.toString(valor2));;
+        
+        areatext.setEnabled(true);
+        areatext2.setEnabled(false); 
     }//GEN-LAST:event_j1ActionPerformed
 
     private void jButton71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton71ActionPerformed
-        // TODO add your handling code here:
+        int jugador;
+        int jugador2;
+        int numero = 14;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton71ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 1;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
       
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        int jugador;
+        int jugador2;
         int numero = 1;
         int aleatorio;
         int valor;
-        int newValor;
+        int newValor = 0;
         
         aleatorio = Integer.parseInt(numRdn.getText());
-        if(aleatorio == numero){
-        //  if(textarea==enabled(true)){  -Si jugador 1 esta activo, hacer lo siguiente(en "areatext") 
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
                 valor = Integer.parseInt(areatext.getText());
-                newValor = valor +1;
+                newValor=valor+1;
+                
      
                 areatext.setText(Integer.toString(newValor)); 
-                
-        /*  }else if(textarea2==enabled(true)){, si jugador 2 esta activo hacer lo mismo con jugador 2(en "areatext2")
-                valor = Integer.parseInt(areatext2.getText());
-                newValor = valor +1;
-     
-                areatext2.setText(Integer.toString(newValor));
-        */
+               
         }else{
             valor = Integer.parseInt(areatext.getText());
             areatext.setText(Integer.toString(valor));
-        } 
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    } 
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        int jugador;
+        int jugador2;
         int numero = 1;
         int aleatorio;
         int valor;
-        int newValor;
+        int newValor = 0;
         
         aleatorio = Integer.parseInt(numRdn.getText());
-        if(aleatorio == numero){
-        //  if(textarea==enabled(true)){  -Si jugador 1 esta activo, hacer lo siguiente(en "areatext") 
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
                 valor = Integer.parseInt(areatext.getText());
-                newValor = valor +3;
+                newValor=valor+3;
+                
      
                 areatext.setText(Integer.toString(newValor)); 
-                
-        /*  }else if(textarea2==enabled(true)){, si jugador 2 esta activo hacer lo mismo con jugador 2(en "areatext2")
-                valor = Integer.parseInt(areatext2.getText());
-                newValor = valor +1;
-     
-                areatext2.setText(Integer.toString(newValor));
-        */
+               
         }else{
             valor = Integer.parseInt(areatext.getText());
             areatext.setText(Integer.toString(valor));
-        } 
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 1;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
       
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 18;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
       
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 18;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
       
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 18;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
       
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 18;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
       
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 4;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
       
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 4;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
       
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 4;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
       
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 4;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
       
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 13;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
       
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 13;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
       
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 13;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
       
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 13;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
       
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void areatextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_areatextActionPerformed
@@ -818,8 +1888,2551 @@ public class RULETA extends javax.swing.JFrame {
     }//GEN-LAST:event_tirarActionPerformed
 
     private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
-        // TODO add your handling code here:
+        int jugador;
+        int jugador2;
+        int numero = 3;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
     }//GEN-LAST:event_jButton45ActionPerformed
+
+    private void j2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j2ActionPerformed
+        int valor = 1;
+        int valor2 = 0;
+        p2.setText(Integer.toString(valor));
+        p1.setText(Integer.toString(valor2));;
+        
+        areatext.setEnabled(false);
+        areatext2.setEnabled(true);
+    }//GEN-LAST:event_j2ActionPerformed
+
+    private void jButton80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton80ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 5;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton80ActionPerformed
+
+    private void jButton81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton81ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 5;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton81ActionPerformed
+
+    private void jButton83ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton83ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 5;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton83ActionPerformed
+
+    private void jButton82ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton82ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 5;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton82ActionPerformed
+
+    private void jButton77ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton77ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 12;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton77ActionPerformed
+
+    private void jButton79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton79ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 12;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton79ActionPerformed
+
+    private void jButton78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton78ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 12;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton78ActionPerformed
+
+    private void jButton76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton76ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 12;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton76ActionPerformed
+
+    private void jButton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton73ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 9;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton73ActionPerformed
+
+    private void jButton75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton75ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 9;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton75ActionPerformed
+
+    private void jButton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton74ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 9;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton74ActionPerformed
+
+    private void jButton72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton72ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 9;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton72ActionPerformed
+
+    private void jButton69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton69ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 14;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton69ActionPerformed
+
+    private void jButton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton70ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 14;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton70ActionPerformed
+
+    private void jButton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton68ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 14;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton68ActionPerformed
+
+    private void jButton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton67ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 11;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton67ActionPerformed
+
+    private void jButton65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton65ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 11;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton65ActionPerformed
+
+    private void jButton66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton66ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 11;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton66ActionPerformed
+
+    private void jButton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton64ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 11;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton64ActionPerformed
+
+    private void jButton63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton63ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 8;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton63ActionPerformed
+
+    private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 8;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton61ActionPerformed
+
+    private void jButton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton62ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 8;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton62ActionPerformed
+
+    private void jButton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton60ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 8;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton60ActionPerformed
+
+    private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 16;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton59ActionPerformed
+
+    private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton57ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 16;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton57ActionPerformed
+
+    private void jButton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton58ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 16;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton58ActionPerformed
+
+    private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 16;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton56ActionPerformed
+
+    private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 7;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton55ActionPerformed
+
+    private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 7;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton53ActionPerformed
+
+    private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 7;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton54ActionPerformed
+
+    private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 7;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton52ActionPerformed
+
+    private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 19;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton51ActionPerformed
+
+    private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 19;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton49ActionPerformed
+
+    private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 19;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton50ActionPerformed
+
+    private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 19;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton48ActionPerformed
+
+    private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 3;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton47ActionPerformed
+
+    private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 3;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton46ActionPerformed
+
+    private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 3;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton44ActionPerformed
+
+    private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 17;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton43ActionPerformed
+
+    private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 17;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton41ActionPerformed
+
+    private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 17;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton42ActionPerformed
+
+    private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 17;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton40ActionPerformed
+
+    private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 2;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton39ActionPerformed
+
+    private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 2;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton37ActionPerformed
+
+    private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 2;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton38ActionPerformed
+
+    private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 2;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton36ActionPerformed
+
+    private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 15;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton35ActionPerformed
+
+    private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 15;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton33ActionPerformed
+
+    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 15;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton34ActionPerformed
+
+    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 15;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton32ActionPerformed
+
+    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 10;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton31ActionPerformed
+
+    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 10;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton29ActionPerformed
+
+    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 10;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton30ActionPerformed
+
+    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 10;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton28ActionPerformed
+
+    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 6;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton27ActionPerformed
+
+    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 6;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+1;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+1;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton25ActionPerformed
+
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 6;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+3;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+3;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton26ActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        int jugador;
+        int jugador2;
+        int numero = 6;
+        int aleatorio;
+        int valor;
+        int newValor = 0;
+        
+        aleatorio = Integer.parseInt(numRdn.getText());
+        
+        jugador = Integer.parseInt(p1.getText());
+        jugador2 = Integer.parseInt(p2.getText());
+      
+      
+    if(jugador == 1){ 
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext.getText());
+                newValor=valor+2;
+                
+     
+                areatext.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext.getText());
+            areatext.setText(Integer.toString(valor));
+        }
+        
+    }else if(jugador2 == 1){  
+        
+        if(aleatorio == numero){ 
+                valor = Integer.parseInt(areatext2.getText());
+                newValor=valor+2;
+                
+     
+                areatext2.setText(Integer.toString(newValor)); 
+               
+        }else{
+            valor = Integer.parseInt(areatext2.getText());
+            areatext2.setText(Integer.toString(valor));
+        }
+    }
+    }//GEN-LAST:event_jButton24ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -860,6 +4473,7 @@ public class RULETA extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField areatext;
     private javax.swing.JTextField areatext2;
+    private javax.swing.JTextField contador;
     private javax.swing.JButton j1;
     private javax.swing.JButton j2;
     private javax.swing.JButton jButton1;
@@ -950,17 +4564,21 @@ public class RULETA extends javax.swing.JFrame {
     private javax.swing.JDialog jDialog2;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JTextField numRdn;
+    private javax.swing.JTextField p1;
+    private javax.swing.JTextField p2;
     private javax.swing.JButton tirar;
     // End of variables declaration//GEN-END:variables
 }

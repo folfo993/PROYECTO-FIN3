@@ -5,8 +5,8 @@ package proyectodiana;
 public class ProyectoDiana {
 
     public static void main(String[] args) {
-        Menu mn = new Menu();
-        mn.setVisible(true);
+        INICIO ini = new INICIO();
+        ini.setVisible(true);
         
 }
 }
