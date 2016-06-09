@@ -1,5 +1,7 @@
 package proyectodiana;
 
+import java.applet.AudioClip;
+
 /**
  *
  * @author WeeDolf
@@ -35,8 +37,8 @@ public class RESTAR501 extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        j1 = new javax.swing.JButton();
+        j2 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
@@ -116,9 +118,12 @@ public class RESTAR501 extends javax.swing.JFrame {
         jButton85 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         areatext = new javax.swing.JTextField();
-        jTextField1 = new javax.swing.JTextField();
+        areatext2 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
         jFrame1.getContentPane().setLayout(jFrame1Layout);
@@ -158,7 +163,7 @@ public class RESTAR501 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "RESTAR 501", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Andalus", 1, 36), new java.awt.Color(0, 204, 204))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, " 501", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Andalus", 1, 48), new java.awt.Color(0, 204, 204))); // NOI18N
         jPanel1.setToolTipText("");
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -170,6 +175,7 @@ public class RESTAR501 extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 420, 80, 50));
 
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -177,13 +183,15 @@ public class RESTAR501 extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, 50, 10));
 
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 30, 40));
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, 30, 20));
 
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -191,66 +199,79 @@ public class RESTAR501 extends javax.swing.JFrame {
         });
         jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 30, 10));
 
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, 10, 40));
+        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, 10, 30));
 
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 110, 30, 10));
+        jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, 20, 10));
 
-        jButton3.setText("J.1");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        j1.setText("J.1");
+        j1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                j1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 270, 110, -1));
+        jPanel1.add(j1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 270, 110, -1));
 
-        jButton7.setText("J.2");
-        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 270, 110, -1));
+        j2.setText("J.2");
+        j2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                j2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(j2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 270, 110, -1));
 
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 30, 30));
+        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 140, 20, 20));
 
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton10ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, 20, 10));
+        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, 10, 10));
 
+        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton11ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 200, 10, 40));
+        jPanel1.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 10, 10));
 
+        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton12ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 130, 20, 20));
+        jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 130, 10, 10));
 
+        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton13ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 150, 30, 30));
+        jPanel1.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, 20, 20));
 
+        jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton14ActionPerformed(evt);
@@ -258,27 +279,31 @@ public class RESTAR501 extends javax.swing.JFrame {
         });
         jPanel1.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 190, 10, 20));
 
+        jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton15ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 210, 10, 20));
+        jPanel1.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 220, 10, 10));
 
+        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton16ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 163, 10, 20));
+        jPanel1.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 173, 10, 10));
 
+        jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton17ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 190, 40, 20));
+        jPanel1.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, 20, 20));
 
+        jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton18ActionPerformed(evt);
@@ -286,108 +311,543 @@ public class RESTAR501 extends javax.swing.JFrame {
         });
         jPanel1.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 210, 10, 20));
 
+        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton19ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, 20, 10));
+        jPanel1.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, 10, 10));
 
+        jButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton20ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 200, 10, 40));
+        jPanel1.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 220, 10, -1));
 
+        jButton21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton21ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 220, 30, 30));
+        jPanel1.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 220, 20, 20));
 
+        jButton22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton22ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 240, 20, 20));
+        jPanel1.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 240, 10, 10));
 
+        jButton23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton23ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 20, 10));
-        jPanel1.add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 250, 10, 50));
-        jPanel1.add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, 40, 30));
-        jPanel1.add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, 10, 20));
-        jPanel1.add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 270, 40, 10));
-        jPanel1.add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 320, 10, 20));
-        jPanel1.add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 300, 30, 30));
-        jPanel1.add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 300, 20, 20));
-        jPanel1.add(jButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 290, 30, 10));
-        jPanel1.add(jButton32, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 360, 10, 20));
-        jPanel1.add(jButton33, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 340, 30, 30));
-        jPanel1.add(jButton34, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 330, 10, 20));
-        jPanel1.add(jButton35, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 20, 10));
-        jPanel1.add(jButton36, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 410, 20, 10));
-        jPanel1.add(jButton37, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 370, 30, 30));
-        jPanel1.add(jButton38, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 350, 20, 10));
-        jPanel1.add(jButton39, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 310, 10, 20));
-        jPanel1.add(jButton40, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 430, 30, 10));
-        jPanel1.add(jButton41, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 390, 30, 30));
-        jPanel1.add(jButton42, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 370, 20, 10));
-        jPanel1.add(jButton43, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 10, 20));
-        jPanel1.add(jButton44, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 440, 50, 10));
-        jPanel1.add(jButton45, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 393, 30, 40));
-        jPanel1.add(jButton46, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 370, 30, 10));
-        jPanel1.add(jButton47, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 10, 50));
-        jPanel1.add(jButton48, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 430, 30, 10));
-        jPanel1.add(jButton49, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 400, 30, 20));
-        jPanel1.add(jButton50, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 370, 20, 10));
-        jPanel1.add(jButton51, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 320, 10, 30));
-        jPanel1.add(jButton52, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 410, 20, 10));
-        jPanel1.add(jButton53, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 370, 30, 30));
-        jPanel1.add(jButton54, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, 20, 10));
-        jPanel1.add(jButton55, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 320, 10, 20));
-        jPanel1.add(jButton56, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 370, 10, 20));
-        jPanel1.add(jButton57, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, 30, 30));
-        jPanel1.add(jButton58, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, 20, -1));
-        jPanel1.add(jButton59, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, 10, 20));
-        jPanel1.add(jButton60, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 310, 10, 30));
-        jPanel1.add(jButton61, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, 30, 30));
-        jPanel1.add(jButton62, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, 20, 10));
-        jPanel1.add(jButton63, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 290, 20, 10));
-        jPanel1.add(jButton64, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 10, 50));
-        jPanel1.add(jButton65, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 260, 30, 30));
-        jPanel1.add(jButton66, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 260, 10, 30));
-        jPanel1.add(jButton67, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, 40, 10));
-        jPanel1.add(jButton68, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, 10, 40));
-        jPanel1.add(jButton69, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 30, 30));
-        jPanel1.add(jButton70, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, 10, 30));
 
+        jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 250, 10, 50));
+
+        jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton25ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 270, 30, 20));
+
+        jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton26ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, 10, 20));
+
+        jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton27ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 270, 30, 10));
+
+        jButton28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton28ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 330, 10, 10));
+
+        jButton29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton29ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 310, 20, 20));
+
+        jButton30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton30ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 300, 10, 10));
+
+        jButton31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton31ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 290, 20, 10));
+
+        jButton32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton32ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton32, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 370, 10, 10));
+
+        jButton33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton33ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton33, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 350, 20, 20));
+
+        jButton34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton34ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton34, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 330, 10, 10));
+
+        jButton35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton35ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton35, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 20, 10));
+
+        jButton36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton36ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton36, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 410, 10, 10));
+
+        jButton37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton37ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton37, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 380, 20, 20));
+
+        jButton38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton38ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton38, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 350, 10, 10));
+
+        jButton39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton39ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton39, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 330, 10, 10));
+
+        jButton40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton40ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton40, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 430, 10, 10));
+
+        jButton41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton41ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton41, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 400, 20, 20));
+
+        jButton42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton42ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton42, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 370, 10, 10));
+
+        jButton43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton43ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton43, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 10, 20));
+
+        jButton44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton44ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton44, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 440, 50, 10));
+
+        jButton45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton45ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton45, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 410, 30, 20));
+
+        jButton46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton46.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton46ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton46, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 370, 30, 10));
+
+        jButton47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton47.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton47ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton47, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 320, 10, 40));
+
+        jButton48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton48ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton48, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 430, 10, 10));
+
+        jButton49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton49ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton49, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 400, 30, 20));
+
+        jButton50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton50ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton50, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 370, 10, 10));
+
+        jButton51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton51ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton51, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 330, 10, 20));
+
+        jButton52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton52ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton52, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 410, 10, 10));
+
+        jButton53.setBackground(new java.awt.Color(255, 255, 255));
+        jButton53.setForeground(new java.awt.Color(255, 255, 255));
+        jButton53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton53.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton53ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton53, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 380, 20, 20));
+
+        jButton54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton54ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton54, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, 10, 10));
+
+        jButton55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton55ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton55, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 10, 10));
+
+        jButton56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton56ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton56, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 370, 10, 10));
+
+        jButton57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton57.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton57ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton57, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 350, 20, 20));
+
+        jButton58.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton58.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton58ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton58, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 330, 10, 10));
+
+        jButton59.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton59.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton59ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton59, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, 10, 20));
+
+        jButton60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton60.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton60ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton60, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 10, 10));
+
+        jButton61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton61.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton61ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton61, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 310, 20, 20));
+
+        jButton62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton62.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton62ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton62, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 300, 10, 10));
+
+        jButton63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton63.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton63ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton63, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 290, 20, 10));
+
+        jButton64.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton64.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton64ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton64, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 10, 50));
+
+        jButton65.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton65.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton65ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton65, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 270, 20, 20));
+
+        jButton66.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton66.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton66ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton66, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 260, 10, 30));
+
+        jButton67.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton67.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton67ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton67, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, 20, 10));
+
+        jButton68.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton68.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton68ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton68, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 10, 10));
+
+        jButton69.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton69.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton69ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton69, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 20, 20));
+
+        jButton70.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton70.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton70ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton70, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, 10, 10));
+
+        jButton71.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
         jButton71.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton71ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton71, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, 30, 10));
-        jPanel1.add(jButton72, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 10, 20));
-        jPanel1.add(jButton73, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 30, 30));
+        jPanel1.add(jButton71, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, 20, 10));
+
+        jButton72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton72.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton72ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton72, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 10, 10));
+
+        jButton73.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton73.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton73ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton73, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 20, 20));
+
+        jButton74.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton74.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton74ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton74, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 10, 20));
-        jPanel1.add(jButton75, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, 20, 10));
-        jPanel1.add(jButton76, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, 20, 10));
-        jPanel1.add(jButton77, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 30, 30));
-        jPanel1.add(jButton78, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 10, 20));
+
+        jButton75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton75.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton75ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton75, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, 10, 10));
+
+        jButton76.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton76.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton76ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton76, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, 10, 10));
+
+        jButton77.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton77.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton77ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton77, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 20, 20));
+
+        jButton78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton78.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton78ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton78, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 10, 10));
+
+        jButton79.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton79.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton79ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton79, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 10, 20));
-        jPanel1.add(jButton80, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 40, 10));
-        jPanel1.add(jButton81, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, 30, 30));
-        jPanel1.add(jButton82, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 20, 10));
-        jPanel1.add(jButton83, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 200, 10, 40));
+
+        jButton80.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton80.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton80ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton80, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, 20, 10));
+
+        jButton81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton81.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton81ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton81, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, 20, 20));
+
+        jButton82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton82.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton82ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton82, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 10, 10));
+
+        jButton83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton83.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton83ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton83, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 200, 10, 20));
+
+        jButton84.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton84.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton84ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton84, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, 30, 10));
-        jPanel1.add(jButton85, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, 10, 20));
+
+        jButton85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/punto.png"))); // NOI18N
+        jButton85.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton85ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton85, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, 10, 10));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/diana2.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -403,10 +863,10 @@ public class RESTAR501 extends javax.swing.JFrame {
         });
         jPanel1.add(areatext, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 180, 110, 60));
 
-        jTextField1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField1.setText("501");
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 180, 110, 60));
+        areatext2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        areatext2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        areatext2.setText("501");
+        jPanel1.add(areatext2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 180, 110, 60));
 
         jLabel2.setBackground(new java.awt.Color(0, 204, 204));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -420,7 +880,16 @@ public class RESTAR501 extends javax.swing.JFrame {
         jLabel3.setText("VOLVER");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 400, 80, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 490));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/TgC_barra06.gif"))); // NOI18N
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 410, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/TgC_barra06.gif"))); // NOI18N
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 490, 410, 10));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/diana-con-los-dardos-en-el-centro-39489623.jpg"))); // NOI18N
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 830, 450));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 510));
         jPanel1.getAccessibleContext().setAccessibleName("");
 
         pack();
@@ -436,182 +905,1758 @@ public class RESTAR501 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        
       int valor;
       int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
       newValor = valor -40;
-      areatext.setText(Integer.toString(newValor));
+     
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-      int valor;
-      int newValor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+        int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
       newValor = valor -20;
-      areatext.setText(Integer.toString(newValor));
+     
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
       
       
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-      int valor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
       int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
       newValor = valor -60;
-      areatext.setText(Integer.toString(newValor));
+     
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-      int valor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
       int newValor;
-     
-     /* if(tengo activado el textarea1){
-       valor = Integer.parseInt(areatext.getText());
+    
+      valor = Integer.parseInt(areatext.getText());
       newValor = valor -20;
-      areatext.setText(Integer.toString(newValor));}
-      else 
-        areatext2*/
+      
+      //if(textarea==enabled(true)){  -Si jugador 1 esta activo, hacer lo siguiente(en "areatext") sino(else), si jugador 2 esta activo hacer lo mismo con jugador 2(en "areatext2")
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+      /*}else if (textarea2 == enabled(true)){
+            if(newValor<0){
+                areatext2.setText(Integer.toString(valor));
+            }else if(newValor==0){
+                gdr2 g2 = new gdr2();
+                g2.setVisible(true)
+            }else{
+                areatext2.setText(Integer.toString(newValor));
+            }
+        }*/
     }//GEN-LAST:event_jButton6ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-    //  INACTIVO ARETEXT2 Y ACTIVO ARETEXT1 . dISABLE 
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void j1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j1ActionPerformed
+        
+            areatext.setEnabled(true);
+            areatext2.setEnabled(false);
+        
+    }//GEN-LAST:event_j1ActionPerformed
 
     private void jButton71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton71ActionPerformed
-        // TODO add your handling code here:
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -14;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton71ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-      int valor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
       int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
       newValor = valor -2;
-      areatext.setText(Integer.toString(newValor));
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-      int valor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
       int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
       newValor = valor -1;
-      areatext.setText(Integer.toString(newValor));
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-      int valor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
       int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
       newValor = valor -3;
-      areatext.setText(Integer.toString(newValor));
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-      int valor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
       int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
       newValor = valor -1;
-      areatext.setText(Integer.toString(newValor));
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-      int valor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
       int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
-      newValor = valor -54;
-      areatext.setText(Integer.toString(newValor));
+      newValor = valor -36;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-      int valor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
       int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
       newValor = valor -18;
-      areatext.setText(Integer.toString(newValor));
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-      int valor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
       int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
-      newValor = valor -36;
-      areatext.setText(Integer.toString(newValor));
+      newValor = valor -54;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-      int valor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
       int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
       newValor = valor -18;
-      areatext.setText(Integer.toString(newValor));
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-      int valor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
       int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
-      newValor = valor -12;
-      areatext.setText(Integer.toString(newValor));
+      newValor = valor -8;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-      int valor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
       int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
       newValor = valor -4;
-      areatext.setText(Integer.toString(newValor));
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-      int valor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
       int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
-      newValor = valor -8;
-      areatext.setText(Integer.toString(newValor));
+      newValor = valor -12;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-      int valor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
       int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
       newValor = valor -4;
-      areatext.setText(Integer.toString(newValor));
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-      int valor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
       int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
-      newValor = valor -39;
-      areatext.setText(Integer.toString(newValor));
+      newValor = valor -26;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-      int valor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
       int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
       newValor = valor -13;
-      areatext.setText(Integer.toString(newValor));
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-      int valor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
       int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
-      newValor = valor -26;
-      areatext.setText(Integer.toString(newValor));
+      newValor = valor -39;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-      int valor;
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
       int newValor;
+    
       valor = Integer.parseInt(areatext.getText());
       newValor = valor -13;
-      areatext.setText(Integer.toString(newValor));
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void areatextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_areatextActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_areatextActionPerformed
+
+    private void j2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j2ActionPerformed
+        
+            areatext2.setEnabled(true);
+            areatext.setEnabled(false);
+        
+    }//GEN-LAST:event_j2ActionPerformed
+
+    private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
+       AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -7;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }// TODO add your handling code here:
+    }//GEN-LAST:event_jButton55ActionPerformed
+
+    private void jButton81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton81ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -5;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }// TODO add your handling code here:
+    }//GEN-LAST:event_jButton81ActionPerformed
+
+    private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -7;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }// TODO add your handling code here:
+    }//GEN-LAST:event_jButton53ActionPerformed
+
+    private void jButton80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton80ActionPerformed
+      AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -10;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }// TODO add your handling code here:
+    }//GEN-LAST:event_jButton80ActionPerformed
+
+    private void jButton83ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton83ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -5;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton83ActionPerformed
+
+    private void jButton82ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton82ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -15;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton82ActionPerformed
+
+    private void jButton76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton76ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -24;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton76ActionPerformed
+
+    private void jButton77ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton77ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -12;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton77ActionPerformed
+
+    private void jButton78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton78ActionPerformed
+       AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -36;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton78ActionPerformed
+
+    private void jButton79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton79ActionPerformed
+       AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -12;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton79ActionPerformed
+
+    private void jButton72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton72ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -18;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton72ActionPerformed
+
+    private void jButton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton73ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -9;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton73ActionPerformed
+
+    private void jButton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton74ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -27;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton74ActionPerformed
+
+    private void jButton75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton75ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -9;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton75ActionPerformed
+
+    private void jButton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton68ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -24;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton68ActionPerformed
+
+    private void jButton69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton69ActionPerformed
+       AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -14;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton69ActionPerformed
+
+    private void jButton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton70ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -42;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton70ActionPerformed
+
+    private void jButton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton64ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -22;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton64ActionPerformed
+
+    private void jButton65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton65ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -11;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton65ActionPerformed
+
+    private void jButton66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton66ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -33;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton66ActionPerformed
+
+    private void jButton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton67ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -11;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton67ActionPerformed
+
+    private void jButton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton60ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -16;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton60ActionPerformed
+
+    private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -8;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton61ActionPerformed
+
+    private void jButton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton62ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -24;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton62ActionPerformed
+
+    private void jButton63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton63ActionPerformed
+       AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -8;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton63ActionPerformed
+
+    private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -32;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton56ActionPerformed
+
+    private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton57ActionPerformed
+       AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -16;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton57ActionPerformed
+
+    private void jButton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton58ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -48;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton58ActionPerformed
+
+    private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -16;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton59ActionPerformed
+
+    private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -14;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton52ActionPerformed
+
+    private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -21;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton54ActionPerformed
+
+    private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -19;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton49ActionPerformed
+
+    private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -38;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton48ActionPerformed
+
+    private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -57;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton50ActionPerformed
+
+    private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -19;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton51ActionPerformed
+
+    private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -6;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton44ActionPerformed
+
+    private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -3;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton45ActionPerformed
+
+    private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -9;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton46ActionPerformed
+
+    private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -3;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton47ActionPerformed
+
+    private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -34;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton40ActionPerformed
+
+    private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -17;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton41ActionPerformed
+
+    private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -51;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton42ActionPerformed
+
+    private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -17;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton43ActionPerformed
+
+    private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -4;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton36ActionPerformed
+
+    private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -2;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton37ActionPerformed
+
+    private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -6;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton38ActionPerformed
+
+    private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -2;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton39ActionPerformed
+
+    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -30;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton32ActionPerformed
+
+    private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -15;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton33ActionPerformed
+
+    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -45;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton34ActionPerformed
+
+    private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
+        
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -15;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton35ActionPerformed
+
+    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -20;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton28ActionPerformed
+
+    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -10;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton29ActionPerformed
+
+    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -30;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton30ActionPerformed
+
+    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -10;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton31ActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -12;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -6;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton25ActionPerformed
+
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -18;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton26ActionPerformed
+
+    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -6;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton27ActionPerformed
+
+    private void jButton84ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton84ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/drop21.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -25;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton84ActionPerformed
+
+    private void jButton85ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton85ActionPerformed
+        AudioClip sonido;
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonido/explosion_barrel_00.wav"));
+        sonido.play();
+        int valor;
+      int newValor;
+    
+      valor = Integer.parseInt(areatext.getText());
+      newValor = valor -50;
+      
+      if(newValor<0){
+          areatext.setText(Integer.toString(valor)); 
+      }else if(newValor==0){
+          gdr1 g1 = new gdr1();
+          g1.setVisible(true);
+          this.setVisible(false);
+      }else{
+          areatext.setText(Integer.toString(newValor));
+      }
+    }//GEN-LAST:event_jButton85ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -650,6 +2695,9 @@ public class RESTAR501 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField areatext;
+    private javax.swing.JTextField areatext2;
+    private javax.swing.JButton j1;
+    private javax.swing.JButton j2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -672,7 +2720,6 @@ public class RESTAR501 extends javax.swing.JFrame {
     private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton30;
     private javax.swing.JButton jButton31;
     private javax.swing.JButton jButton32;
@@ -716,7 +2763,6 @@ public class RESTAR501 extends javax.swing.JFrame {
     private javax.swing.JButton jButton67;
     private javax.swing.JButton jButton68;
     private javax.swing.JButton jButton69;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton70;
     private javax.swing.JButton jButton71;
     private javax.swing.JButton jButton72;
@@ -742,9 +2788,11 @@ public class RESTAR501 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPopupMenu jPopupMenu1;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

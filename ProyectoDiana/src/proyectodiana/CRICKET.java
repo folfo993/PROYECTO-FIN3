@@ -35,8 +35,6 @@ public class CRICKET extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
@@ -115,10 +113,24 @@ public class CRICKET extends javax.swing.JFrame {
         jButton84 = new javax.swing.JButton();
         jButton85 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        areatext = new javax.swing.JTextField();
-        jTextField1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        n20 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
+        jTextField8 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        puntos = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
         jFrame1.getContentPane().setLayout(jFrame1Layout);
@@ -196,7 +208,7 @@ public class CRICKET extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, 10, 40));
+        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, 10, 30));
 
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -204,17 +216,6 @@ public class CRICKET extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 110, 30, 10));
-
-        jButton3.setText("J.1");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 270, 110, -1));
-
-        jButton7.setText("J.2");
-        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 270, 110, -1));
 
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -335,7 +336,7 @@ public class CRICKET extends javax.swing.JFrame {
         jPanel1.add(jButton36, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 410, 20, 10));
         jPanel1.add(jButton37, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 370, 30, 30));
         jPanel1.add(jButton38, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 350, 20, 10));
-        jPanel1.add(jButton39, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 310, 10, 20));
+        jPanel1.add(jButton39, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 320, 10, 20));
         jPanel1.add(jButton40, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 430, 30, 10));
         jPanel1.add(jButton41, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 390, 30, 30));
         jPanel1.add(jButton42, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 370, 20, 10));
@@ -343,7 +344,7 @@ public class CRICKET extends javax.swing.JFrame {
         jPanel1.add(jButton44, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 440, 50, 10));
         jPanel1.add(jButton45, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 393, 30, 40));
         jPanel1.add(jButton46, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 370, 30, 10));
-        jPanel1.add(jButton47, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 10, 50));
+        jPanel1.add(jButton47, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 320, 10, 40));
         jPanel1.add(jButton48, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 430, 30, 10));
         jPanel1.add(jButton49, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 400, 30, 20));
         jPanel1.add(jButton50, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 370, 20, 10));
@@ -393,32 +394,70 @@ public class CRICKET extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 410, 415));
 
-        areatext.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        areatext.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        areatext.setText("501");
-        areatext.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                areatextActionPerformed(evt);
-            }
-        });
-        jPanel1.add(areatext, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 180, 110, 60));
-
-        jTextField1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField1.setText("501");
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 180, 110, 60));
-
         jLabel2.setBackground(new java.awt.Color(0, 204, 204));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText(" MARCADORES");
         jLabel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, 170, 40));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 70, 170, 40));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("VOLVER");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 400, 80, -1));
+
+        n20.setText("0");
+        n20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                n20ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(n20, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 180, 40, -1));
+
+        jTextField3.setText("jTextField3");
+        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 180, 30, -1));
+
+        jTextField4.setText("jTextField4");
+        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 180, 30, -1));
+
+        jTextField5.setText("jTextField5");
+        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 180, 30, -1));
+
+        jTextField6.setText("jTextField6");
+        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 180, 30, -1));
+
+        jTextField7.setText("jTextField7");
+        jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 180, 30, -1));
+
+        jTextField8.setText("jTextField8");
+        jPanel1.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 180, 40, -1));
+
+        jLabel4.setText("jLabel4");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 150, -1, -1));
+
+        jLabel5.setText("jLabel5");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 150, -1, -1));
+
+        jLabel6.setText("jLabel6");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 150, -1, -1));
+
+        jLabel7.setText("jLabel7");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 150, -1, -1));
+
+        jLabel8.setText("jLabel8");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 150, -1, -1));
+
+        jLabel9.setText("jLabel9");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 150, -1, -1));
+
+        jLabel10.setText("jLabel10");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 150, -1, -1));
+
+        puntos.setText("jTextField9");
+        jPanel1.add(puntos, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 250, 130, 40));
+
+        jLabel11.setText("jLabel11");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 230, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 490));
         jPanel1.getAccessibleContext().setAccessibleName("");
@@ -436,182 +475,130 @@ public class CRICKET extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-      int valor;
-      int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -40;
-      areatext.setText(Integer.toString(newValor));
+      
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
       int valor;
       int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -20;
-      areatext.setText(Integer.toString(newValor));
+      int puntuacion;
+      int newPuntuacion;
+      
+      valor = Integer.parseInt(n20.getText()); 
+      puntuacion = Integer.parseInt(puntos.getText());
+      
+      if(valor<3){
+          newValor = valor+1;
+          n20.setText(Integer.toString(newValor));
+      }else if(valor==3){
+          newPuntuacion = puntuacion+20;
+          puntos.setText(Integer.toString(newPuntuacion));
+      }
       
       
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-      int valor;
+        int valor;
       int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -60;
-      areatext.setText(Integer.toString(newValor));
+      int puntuacion;
+      int newPuntuacion;
+      
+      valor = Integer.parseInt(n20.getText()); 
+      puntuacion = Integer.parseInt(puntos.getText());
+      
+      if(valor<3){
+          if(valor==0){
+            newValor = valor+3;
+            n20.setText(Integer.toString(newValor));
+          }else if(valor==1){
+            newValor = valor+2;
+            n20.setText(Integer.toString(newValor));
+          }else if(valor==2){
+            newValor = valor+1;
+            n20.setText(Integer.toString(newValor));
+          }
+      }else if(valor==3){
+          newPuntuacion = puntuacion+60;
+          puntos.setText(Integer.toString(newPuntuacion));
+      }
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-      int valor;
-      int newValor;
-     
-     /* if(tengo activado el textarea1){
-       valor = Integer.parseInt(areatext.getText());
-      newValor = valor -20;
-      areatext.setText(Integer.toString(newValor));}
-      else 
-        areatext2*/
+      
     }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-    //  INACTIVO ARETEXT2 Y ACTIVO ARETEXT1 . dISABLE 
-    }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton71ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton71ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-      int valor;
-      int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -2;
-      areatext.setText(Integer.toString(newValor));
+      
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-      int valor;
-      int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -1;
-      areatext.setText(Integer.toString(newValor));
+      
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-      int valor;
-      int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -3;
-      areatext.setText(Integer.toString(newValor));
+      
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-      int valor;
-      int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -1;
-      areatext.setText(Integer.toString(newValor));
+      
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-      int valor;
-      int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -54;
-      areatext.setText(Integer.toString(newValor));
+      
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-      int valor;
-      int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -18;
-      areatext.setText(Integer.toString(newValor));
+      
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-      int valor;
-      int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -36;
-      areatext.setText(Integer.toString(newValor));
+      
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-      int valor;
-      int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -18;
-      areatext.setText(Integer.toString(newValor));
+      
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-      int valor;
-      int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -12;
-      areatext.setText(Integer.toString(newValor));
+      
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-      int valor;
-      int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -4;
-      areatext.setText(Integer.toString(newValor));
+      
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-      int valor;
-      int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -8;
-      areatext.setText(Integer.toString(newValor));
+      
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-      int valor;
-      int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -4;
-      areatext.setText(Integer.toString(newValor));
+      
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-      int valor;
-      int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -39;
-      areatext.setText(Integer.toString(newValor));
+      
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-      int valor;
-      int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -13;
-      areatext.setText(Integer.toString(newValor));
+      
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-      int valor;
-      int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -26;
-      areatext.setText(Integer.toString(newValor));
+      
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-      int valor;
-      int newValor;
-      valor = Integer.parseInt(areatext.getText());
-      newValor = valor -13;
-      areatext.setText(Integer.toString(newValor));
+      
     }//GEN-LAST:event_jButton23ActionPerformed
 
-    private void areatextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_areatextActionPerformed
+    private void n20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n20ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_areatextActionPerformed
+    }//GEN-LAST:event_n20ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -650,7 +637,6 @@ public class CRICKET extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField areatext;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -673,7 +659,6 @@ public class CRICKET extends javax.swing.JFrame {
     private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton30;
     private javax.swing.JButton jButton31;
     private javax.swing.JButton jButton32;
@@ -717,7 +702,6 @@ public class CRICKET extends javax.swing.JFrame {
     private javax.swing.JButton jButton67;
     private javax.swing.JButton jButton68;
     private javax.swing.JButton jButton69;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton70;
     private javax.swing.JButton jButton71;
     private javax.swing.JButton jButton72;
@@ -741,11 +725,26 @@ public class CRICKET extends javax.swing.JFrame {
     private javax.swing.JDialog jDialog2;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPopupMenu jPopupMenu1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField n20;
+    private javax.swing.JTextField puntos;
     // End of variables declaration//GEN-END:variables
 }
